@@ -7,17 +7,20 @@ import nomeMarca from './assets/nomeMarca.png'
 // https://docs.expo.dev/ -->documentação do expo
 export default function App() {
   return (
-    <View style={styles.container}>
-        <Image source={nomeMarca} style={{width: '400px', height: '100px',}} />
+
+    <><View style={styles.containerLogo}>
+      <Image source={nomeMarca} style={styles.nomeMarca} />
+      <Image source={ganes} style={styles.logo} />
+    </View>
+    
+      <View style={styles.container}>
         <Text>Missão</Text>
         <Text>Visão</Text>
         <Text>Valores</Text>
         <StatusBar style="auto" />
-      </View>
+      </View></>
 
-        // <View style={styles.containerLogo}>
-        //   <Image source={ganes} style={styles.logo} />
-        // </View>
+        
   );
 }
 
@@ -29,13 +32,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  // containerLogo: {
-  //   justifyContent:'center',
-  //   alignItems:'center',
-  // },
+  containerLogo: {
+    justifyContent:'center',
+    flexDirection: 'row',
+  },
 
+  nomeMarca: {
+    width: '200px',
+    height: '120px',
+  },
   logo:{
-    width:200,
-    height: 200
+    width: '200px',
+    height: '200px'
   }
 });
