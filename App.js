@@ -8,7 +8,7 @@ import nomeMarca from './assets/nomeMarca.png'
 export default function App() {
   return (
     <View style={styles.container}>
-        <Image source={nomeMarca} style={{width: 'auto', height: 'auto',}} />
+        <Image source={nomeMarca} style={{width: '400', height: '80',}} />
         <Text>Missão</Text>
         <Text>Visão</Text>
         <Text>Valores</Text>
