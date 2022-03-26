@@ -1,0 +1,9 @@
+1-Baixou o projeto do github desktop em seu computador
+2-Vá ao cmd aonde está a pasta do projeto e digite: ' npm i '
+3-Hora de trabaia 
+4-Não esqueça de fazer os commits e salvar o projeto no github com o pull origin
+5-Se tiver dúvidas leia as documentações e veja vídeos no youtube
+6- Beba sua coquinha gelada 👍
+
+
+https://docs.expo.dev/ --> documentação do expo
