@@ -4,7 +4,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import { useFonts, ArchitectsDaughter_400Regular } from '@expo-google-fonts/architects-daughter';
 
-
+import {styles} from '.style.js'
 
 export function HomeScreen({navigation}) {
    let [fontsLoaded] = useFonts({
