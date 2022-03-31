@@ -7,3 +7,5 @@
 
 
 https://docs.expo.dev/ --> documentação do expo
+npm install @react-navigation/native --> react navigation
+

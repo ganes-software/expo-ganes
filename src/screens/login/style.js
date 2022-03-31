@@ -1,6 +1,5 @@
 import {StyleSheet} from 'react-native';
 import Constants from 'expo-constants';
-import { useFonts, ArchitectsDaughter_400Regular } from '@expo-google-fonts/architects-daughter';
 export const styles = StyleSheet.create({
     logo: {
         height: 120,

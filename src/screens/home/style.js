@@ -2,27 +2,39 @@ import {StyleSheet} from 'react-native';
 import Constants from 'expo-constants';
 
 export const styles = StyleSheet.create({
-    container: {
-      flex:1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
+  logo: {
+    height: 120,
+    width: 128,
+  },
+
+sim: {
+    backgroundColor: '#B0E0E6',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+
+  },
+
+nao: {
+    backgroundColor: '#F1D3FF',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+
+  },
   
-    containerLogo: {
-      justifyContent:'center',
-      flexDirection: 'row'
-    },
-  
-    nomeMarca: {
-      width: '250px',
-      height: '120px',
-    },
-  
-    logo:{
-      width: '100px',
-      height: '100px',
-      marginTop: '10px',
-      marginLeft: '5px'
-    }
-  });
+maybe: {
+    backgroundColor: '#FFDFDF',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+
+  },
+
+rikka: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'ArchitectsDaughter_400Regular',
+    fontSize: 25,
+  }
+});
