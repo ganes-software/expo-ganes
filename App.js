@@ -3,7 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
 
-import {Home} from './src/screens/home/index.js';
+import {Home} from './src/screens/home/index-home.js';
 import {Flat} from './src/screens/flatlist/index.js'
 import {Login} from './src/screens/login/index.js'
 
@@ -16,14 +16,11 @@ export default function App() {
 
     
     <NavigationContainer>
-  
       <Drawer.Navigator initialRouteName="Login">
         <Drawer.Screen name="Login" component={Login} options={{ headerShown: false }} />
         <Drawer.Screen name="Home" component={Home} />
-        <Drawe.Screen name="flat" component={Flat} />
-
+        <Drawer.Screen name="flat" component={Flat} />
       </Drawer.Navigator>
-
     </NavigationContainer>
     
   );

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Button, View, Image, StyleSheet,Text, TextInput } from 'react-native';
 
-
 import {styles} from './style.js'
-export function HomeScreen({ navigation }) {  
+
+export function LoginScreen({ navigation }) {  
   return (
     
     <View style={styles.sim} >

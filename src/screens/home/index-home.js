@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-import {styles} from './style.js'
+import {styles} from './style-home.js'
 
 import osCria from '../../../assets/tavio_careca.png';
 import ganes from '../../../assets/logo.png';
