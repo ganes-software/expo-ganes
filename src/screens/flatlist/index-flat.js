@@ -1,7 +1,7 @@
 // import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 
-import {styles} from '../home/style-home.js'
+import {styles} from './style-flat.js'
 
 export function Teste() {
     const users = [

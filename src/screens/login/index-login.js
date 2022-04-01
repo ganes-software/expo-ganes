@@ -1,7 +1,12 @@
 import * as React from 'react';
 import { Button, View, Image, StyleSheet,Text, TextInput } from 'react-native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
 
-import {styles} from './style.js'
+import {styles} from './style-login.js'
+
+import {Home} from '../home/index-home.js';
+import {Flat} from '../flatlist/index-flat.js';
 
 export function LoginScreen({ navigation }) {  
   return (
@@ -32,8 +37,17 @@ export function LoginScreen({ navigation }) {
   );
 }
 
+const Drawer = createDrawerNavigator();
 export default function App() {
   return (
-    <View></View>
+    
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Login">
+        <Drawer.Screen name="Login" component={Login} options={{ headerShown: false }} />
+        <Drawer.Screen name="Home" component={Home} />
+        {/* <Drawer.Screen name="Flat" component={Flat} /> */}
+      </Drawer.Navigator>
+    </NavigationContainer>
+    
   );
 }
