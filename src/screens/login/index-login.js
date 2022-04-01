@@ -8,14 +8,12 @@ import {styles} from './style-login.js'
 import {Home} from '../home/index-home.js';
 import {Flat} from '../flatlist/index-flat.js';
 
-export function LoginScreen({ navigation }) {  
+export function Login({ navigation }) {  
   return (
     
     <View style={styles.sim} >
     <Text style={styles.rikka}>{"LOGIN"}</Text>
-      <Text>{"\n"}</Text>
-        <Text>{"\n"}</Text>
-  
+
                 
     <TextInput
     style={{height: 40, width: 200, justifyContent: 'center' , color: '#000080'}}
@@ -27,7 +25,6 @@ export function LoginScreen({ navigation }) {
     placeholder="Digite sua Senha"
     />
 
-                <Text>{"\n"}</Text>
       <Button 
         onPress={() => navigation.navigate('Home')}
         title="Logar"
@@ -40,12 +37,11 @@ export function LoginScreen({ navigation }) {
 const Drawer = createDrawerNavigator();
 export default function App() {
   return (
-    
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Login">
         <Drawer.Screen name="Login" component={Login} options={{ headerShown: false }} />
         <Drawer.Screen name="Home" component={Home} />
-        {/* <Drawer.Screen name="Flat" component={Flat} /> */}
+        <Drawer.Screen name="Flat" component={Flat} />
       </Drawer.Navigator>
     </NavigationContainer>
     

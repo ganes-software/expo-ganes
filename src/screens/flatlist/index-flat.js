@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 
 import {styles} from './style-flat.js'
 
-export function Teste() {
+export function Flat() {
     const users = [
         { id: '1', categoria: 'Missão' },
         { id: '2', categoria: 'Visão' },
