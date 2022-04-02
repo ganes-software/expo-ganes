@@ -1,13 +1,8 @@
 import * as React from 'react';
 import { Button, View, Image, StyleSheet,Text, TextInput } from 'react-native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer } from '@react-navigation/native';
 
-import {styles} from './style-login.js'
 
-import {Home} from '../home/index-home.js';
-import {Flat} from '../flatlist/index-flat.js';
-
+import {styles} from './style-login.js';
 
 
 export function Login({ navigation }) {  
@@ -28,7 +23,7 @@ export function Login({ navigation }) {
     />
 
       <Button 
-       onPress={() => navigation.navigate(Home)}
+       onPress={() => navigation.navigate('Home')}
        title="Logar"
       />
     </View>
