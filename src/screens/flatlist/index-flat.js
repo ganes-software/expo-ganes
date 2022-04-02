@@ -5,9 +5,19 @@ import {styles} from './style-flat.js'
 
 export function Flat() {
     const users = [
-        { id: '1', categoria: 'Missão' },
-        { id: '2', categoria: 'Visão' },
-        { id: '3', categoria: 'Valores' },
+        { 
+            id: '1', 
+            categoria: 'Missão' 
+        },
+
+        { 
+            id: '2', 
+            categoria: 'Visão'
+        },
+        { 
+            id: '3', 
+            categoria: 'Valores' 
+        },
 
     ]                
     function User ({ username }) {

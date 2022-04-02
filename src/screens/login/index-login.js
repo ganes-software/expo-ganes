@@ -8,6 +8,8 @@ import {styles} from './style-login.js'
 import {Home} from '../home/index-home.js';
 import {Flat} from '../flatlist/index-flat.js';
 
+
+
 export function Login({ navigation }) {  
   return (
     
@@ -26,24 +28,10 @@ export function Login({ navigation }) {
     />
 
       <Button 
-        onPress={() => navigation.navigate('Home')}
-        title="Logar"
+       onPress={() => navigation.navigate(Home)}
+       title="Logar"
       />
     </View>
-    
-  );
-}
-
-const Drawer = createDrawerNavigator();
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Login">
-        <Drawer.Screen name="Login" component={Login} options={{ headerShown: false }} />
-        <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="Flat" component={Flat} />
-      </Drawer.Navigator>
-    </NavigationContainer>
     
   );
 }
