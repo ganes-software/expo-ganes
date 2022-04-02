@@ -23,8 +23,8 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     // <Login />
-    <Home />
-    // <Flat /> 
+    //<Home />
+    <Flat /> 
 
     // <NavigationContainer>
 	  //   <MyStack />
