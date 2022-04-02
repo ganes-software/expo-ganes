@@ -1,9 +1,7 @@
 import * as React from 'react';
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, Text, View } from 'react-native';
 
 import {Login} from './src/screens/login/index-login';
 import {Home} from './src/screens/home/index-home';
@@ -19,7 +17,6 @@ export default function App() {
           component={Login}
           options={{headerShown: false}}
         />
-
         <Drawer.Screen name="Home" component={Home}/>
         <Drawer.Screen name="Flat" component={Flat}/>
       </Drawer.Navigator>

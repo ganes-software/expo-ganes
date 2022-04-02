@@ -5,9 +5,10 @@ import { Card } from '../../../components/card/card.js';
 import osCria from '../../../assets/tavio_careca.png';
 import ganes from '../../../assets/logo.png';
 import nomeMarca from '../../../assets/nomeMarca.png'
+import { Button } from 'react-native-web';
 
 
-export function Home() {
+export function Home({ navigation }) {
   return (
     <View>
 
@@ -36,6 +37,10 @@ export function Home() {
           </Text>
         </Card>
 
+        <Button onPress={() => navigation.navigate('Login')}
+        title="Voltar para tela de login"/>
+
+        <Button onPress={() => navigation.openDrawer()} />
       </View>
     </View>
   );
