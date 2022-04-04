@@ -7,7 +7,8 @@
 
 
 https://docs.expo.dev/ --> documentação do expo
-npm install @react-navigation/native --> instala esse primeiro
-npm install @react-navigation/drawer --> esse em segundo
-expo install react-native-gesture-handler react-native-reanimated --> e por ultimo
+
+1º npm install @react-navigation/native 
+2º expo install react-native-screens react-native-safe-area-context
+3º npm install @react-navigation/drawer 
 
