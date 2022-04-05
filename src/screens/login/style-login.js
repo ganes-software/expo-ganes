@@ -1,39 +1,58 @@
 import {StyleSheet} from 'react-native';
-import Constants from 'expo-constants';
-export const styles = StyleSheet.create({
-    logo: {
-        height: 120,
-        width: 128,
-      },
-    
-    sim: {
-        backgroundColor: '#B0E0E6',
+export const styles = StyleSheet.create({    
+  
+      container: {
+        backgroundColor: '#F8F8FF',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-    
       },
-    
-    nao: {
-        backgroundColor: '#F1D3FF',
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    
+
+      logo:{
+        marginTop: -100,
+        width: '150px',
+        height: '150px',
+        marginBottom:'130px',
       },
       
-    maybe: {
-        backgroundColor: '#FFDFDF',
-        flex: 1,
+      login: {
+        marginTop: -80,
         alignItems: 'center',
         justifyContent: 'center',
-    
+        fontSize: '35px',
       },
-    
-    rikka: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily: 'ArchitectsDaughter_400Regular',
-        fontSize: 25,
-      }
+
+      button:{
+        marginTop: '20px',
+        color:'#841584',
+      },
+
+      input1:{
+        textAlign:'center', 
+        justifyContent: 'center', 
+        height: 40, 
+        width: 250, 
+        color: '#FFF', 
+        marginBottom:'20px', 
+        marginTop:'25px',
+        borderColor: 'black',
+        borderWidth: '2px',
+        borderRadius: '25px',
+        fontSize: '15px'
+      },
+
+      input2:{
+        justifyContent: 'center' ,
+        textAlign:'center',
+        height: 40,
+        width: 250,
+        color: '#FFF',
+        marginBottom:'20px',
+        borderColor: 'black',
+        borderWidth: '2px',
+        borderRadius: '5px',
+        borderRadius: '25px',
+        fontSize: '15px' 
+      },
+
   });

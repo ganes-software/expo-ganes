@@ -1,21 +1,15 @@
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, Button } from 'react-native';
 import { styles } from './style-home.js'
 import { Card } from '../../../components/card/card.js';
-
-import osCria from '../../../assets/tavio_careca.png';
 import ganes from '../../../assets/logo.png';
 import nomeMarca from '../../../assets/nomeMarca.png'
-import { Button } from 'react-native-web';
-
 
 export function Home({ navigation }) {
   return (
-    <View>
-
+    <View style={styles.container}>
       <View style={styles.containerLogo}>
         <Image source={nomeMarca} style={styles.nomeMarca} />
         <Image source={ganes} style={styles.logo} />
-        {/* <Image source={osCria} style={{width: '500px', height:'500px', borderRadius: '50%'}}/> */}
       </View>
 
       <View style={styles.visione}>
@@ -37,10 +31,10 @@ export function Home({ navigation }) {
           </Text>
         </Card>
 
-        <Button onPress={() => navigation.navigate('Login')}
-        title="Voltar para tela de login"/>
-
-        <Button onPress={() => navigation.openDrawer()} />
+        <Button onPress={() => navigation.navigate('Flat')}
+        title="Go to flatlist"
+        color="#a80601"
+        />
       </View>
     </View>
   );

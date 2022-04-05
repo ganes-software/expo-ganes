@@ -2,31 +2,33 @@ import * as React from 'react';
 import { Button, View, Image, StyleSheet,Text, TextInput } from 'react-native';
 
 
-import {styles} from './style-login.js';
-
+import {styles} from './style-login';
+import ganes from '../../../assets/logo.png';
 
 export function Login({ navigation }) {  
   return (
-    
-    <View style={styles.sim} >
-    <Text style={styles.rikka}>{"LOGIN"}</Text>
 
-                
-    <TextInput
-    style={{height: 40, width: 200, justifyContent: 'center' , color: '#000080'}}
-    placeholder="Digite seu Email"
-    />
-    
-    <TextInput
-    style={{height: 40, width: 200, justifyContent: 'center' , color: '#000080'}}
-    placeholder="Digite sua Senha"
-    />
-
-      <Button 
-       onPress={() => navigation.navigate('Home')}
-       title="Logar"
+    <View style={styles.container}>
+      <Image source={ganes} style={styles.logo} />  
+      <Text style={styles.login}>LOGIN</Text>
+         
+      <TextInput 
+      style={styles.input1}
+      placeholder="Digite seu Email"
       />
-    </View>
-    
+      
+      <TextInput
+      style={styles.input2}
+      placeholder="Digite sua Senha"
+      />
+
+        <Button 
+        color="#a80601"
+        onPress={() => navigation.navigate('Home')}
+        title="Logar"
+        style={styles.button}
+        />
+      </View>
+ 
   );
 }

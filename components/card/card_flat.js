@@ -13,17 +13,19 @@ export function Card(props) {
 
 const styles = StyleSheet.create({
   card:{
-    width: '70%',
-    padding:'15px', 
+    width: '270px',
+    padding:'6px', 
     borderWidth: 2,
     borderRadius: 10,
-    borderColor: '#939393',
+    borderColor: '#a80601',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 15,
     backgroundColor: '#FFF',
     textAlign: 'center',
-    marginBottom: '5px'
+    marginBottom: '5px',
+
+    
 
   },
   card_title:{

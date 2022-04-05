@@ -9,6 +9,10 @@ export const styles = StyleSheet.create({
     //   alignItems: 'center',
     //   justifyContent: 'center',
     // },
+
+    container: {
+      backgroundColor: '#F8F8FF',
+    },
   
     containerLogo: {
       justifyContent:'center',
@@ -36,5 +40,6 @@ export const styles = StyleSheet.create({
 
     nomes:{
       fontSize: 20,
-    }
+    },
+
   });
