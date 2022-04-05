@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     // },
 
     container: {
-      backgroundColor: '#F8F8FF',
+      backgroundColor: '#FFF',
     },
   
     containerLogo: {

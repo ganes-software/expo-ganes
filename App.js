@@ -18,7 +18,7 @@ export default function App() {
           options={{headerShown: false}}
         />
         <Drawer.Screen name="Home" component={Home}/>
-        <Drawer.Screen name="Flat" component={Flat}/>
+        <Drawer.Screen name="FlatList" component={Flat}/>
       </Drawer.Navigator>
     </NavigationContainer>
   );

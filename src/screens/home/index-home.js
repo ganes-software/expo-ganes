@@ -31,7 +31,7 @@ export function Home({ navigation }) {
           </Text>
         </Card>
 
-        <Button onPress={() => navigation.navigate('Flat')}
+        <Button onPress={() => navigation.navigate('FlatList')}
         title="Go to flatlist"
         color="#a80601"
         />

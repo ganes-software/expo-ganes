@@ -32,13 +32,13 @@ export const styles = StyleSheet.create({
         justifyContent: 'center', 
         height: 40, 
         width: 250, 
-        color: '#FFF', 
         marginBottom:'20px', 
         marginTop:'25px',
         borderColor: 'black',
         borderWidth: '2px',
         borderRadius: '25px',
         fontSize: '15px'
+
       },
 
       input2:{
@@ -46,7 +46,6 @@ export const styles = StyleSheet.create({
         textAlign:'center',
         height: 40,
         width: 250,
-        color: '#FFF',
         marginBottom:'20px',
         borderColor: 'black',
         borderWidth: '2px',
